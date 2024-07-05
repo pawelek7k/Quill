@@ -2,14 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root[data-theme="light"] {
-  --text: #1a141a;
-  --background: #fbf9fb;
-  --primary: #503d52;
-  --secondary: #bea7b3;
-  --accent: #7e5d69;
-}
-:root[data-theme="dark"] {
+:root {
   --text: #ebe5eb;
   --background: #060406;
   --primary: #c0adc2;
@@ -17,14 +10,19 @@
   --accent: #a2818d;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #1a141a;
+    --background: #fbf9fb;
+    --primary: #503d52;
+    --secondary: #bea7b3;
+    --accent: #7e5d69;
+  }
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text);
+  background-color: var(--background);
 }
 
 @layer utilities {
