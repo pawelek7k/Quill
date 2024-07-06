@@ -1,7 +1,8 @@
-export function NavLinks({ children }: { children: React.ReactNode }) {
-  return (
-    <a href="#" className="text-sm font-semibold leading-6 text-text">
-      {children}
-    </a>
-  );
-}
+export const NavLinks = ({ children }: { children: React.ReactNode }) => (
+  <a
+    href="#"
+    className="text-xl font-semibold leading-6 text-text lg:text-base "
+  >
+    {children}
+  </a>
+);

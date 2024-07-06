@@ -1,10 +1,8 @@
-import { IconType } from "@heroicons/react/20/solid";
-
 interface CallsToActionProps {
   calls: {
     name: string;
     href: string;
-    icon: IconType;
+    icon: React.ElementType;
   }[];
 }
 
