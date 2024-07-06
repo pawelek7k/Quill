@@ -8,12 +8,9 @@ interface MobileMenuProps {
 }
 
 export const MobileMenu = ({ open, setOpen }: MobileMenuProps) => (
-  <Dialog open={open} onClose={setOpen} className="lg:hidden">
+  <Dialog open={open} onClose={setOpen} className="lg:hidden ">
     <div className="fixed inset-0 z-10" />
-    <DialogPanel
-      className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-      style={{ backgroundColor: "var(--primary)" }}
-    >
+    <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white bg-secondaryBg">
       <div className="flex items-center justify-between">
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">Your Company</span>
@@ -32,7 +29,7 @@ export const MobileMenu = ({ open, setOpen }: MobileMenuProps) => (
           <div className="space-y-2 py-6">
             <a
               href="#"
-              className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+              className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-accent"
             >
               Features
             </a>
