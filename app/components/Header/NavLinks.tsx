@@ -1,4 +1,4 @@
-export default function NavLinks({ children }: { children: React.ReactNode }) {
+export function NavLinks({ children }: { children: React.ReactNode }) {
   return (
     <a
       href="#"
