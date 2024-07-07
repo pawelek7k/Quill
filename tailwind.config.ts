@@ -13,9 +13,9 @@ const config: Config = {
       text: '#ebe5eb',
       background: '#060406',
       secondaryBg: '#060406c8',
-      primary: '#99c5d5',
-      secondary: '#2e6b82',
-      accent: '#56adcd',
+      primary: '#c0adc2',
+      secondary: '#58414d',
+      accent: '#a2818d',
     }
   },
   plugins: [],

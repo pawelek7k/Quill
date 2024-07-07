@@ -7,12 +7,12 @@ interface CallsToActionProps {
 }
 
 export const CallsToAction = ({ calls }: CallsToActionProps) => (
-  <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+  <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-accent">
     {calls.map((item) => (
       <a
         key={item.name}
         href={item.href}
-        className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+        className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-primary"
       >
         <item.icon
           aria-hidden="true"
