@@ -50,7 +50,7 @@ export const MobileMenu = ({
         <div className="-my-6 divide-y divide-gray-500/10">
           <div className="space-y-2 py-6 flex flex-col gap-4">
             <Disclosure as="div" className="-mx-3">
-              <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+              <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-gray-900 hover:bg-gray-50 text-xl font-semibold leading-6 text-text ">
                 Product
                 <ChevronDownIcon
                   aria-hidden="true"

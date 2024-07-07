@@ -1,3 +1,4 @@
+import { nextui } from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -6,6 +7,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/components/(button|ripple|spinner).js"
   ],
   theme: {
     colors: {
@@ -13,7 +15,7 @@ const config: Config = {
       text: '#ebe5eb',
       background: '#060406',
       secondaryBg: '#060406c8',
-      primary: '#c0adc2',
+      myPrimary: '#c0adc2',
       secondary: '#58414d',
       accent: '#a2818d',
     },
@@ -22,8 +24,11 @@ const config: Config = {
     },
     zIndex: {
       '999': '999',
+    },
+    backgroundImage: {
+      'hero-bg': "url('/heroBg.jpg')"
     }
   },
-  plugins: [],
+  plugins: [nextui()],
 };
 export default config;
