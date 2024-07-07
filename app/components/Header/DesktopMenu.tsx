@@ -35,9 +35,9 @@ export const DesktopMenu = ({ products, callsToAction }: DesktopMenuProps) => (
       </PopoverButton>
       <PopoverPanel
         transition
-        className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg border-primary border-x transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
+        className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg border-primary border-x transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in bg-secondaryBg backdrop-blur-sm z-999"
       >
-        <div className="p-4 bg-secondaryBg backdrop-blur-sm">
+        <div className="p-4">
           {products.map((item) => (
             <ProductItem key={item.name} item={item} />
           ))}

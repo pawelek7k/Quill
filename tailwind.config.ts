@@ -19,6 +19,9 @@ const config: Config = {
     },
     fontFamily: {
       sans: ['Arsenal SC', 'sans-serif'],
+    },
+    zIndex: {
+      '999': '999',
     }
   },
   plugins: [],
