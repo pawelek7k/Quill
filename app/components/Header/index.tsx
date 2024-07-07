@@ -10,6 +10,7 @@ import {
   SquaresPlusIcon,
 } from "@heroicons/react/20/solid";
 import { Bars3Icon } from "@heroicons/react/24/outline";
+import { Button } from "@nextui-org/button";
 import { useState } from "react";
 import { Logo } from "../Logo";
 import { DesktopMenu } from "./DesktopMenu";
@@ -81,7 +82,9 @@ export const Header = () => {
         <DesktopMenu products={products} callsToAction={callsToAction} />
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <NavLinks href={"#"}>
-            Log in <span aria-hidden="true">&rarr;</span>
+            <Button radius="full" className="bg-secondaryBg text-text">
+              Log in <span aria-hidden="true">&rarr;</span>
+            </Button>
           </NavLinks>
         </div>
       </nav>
