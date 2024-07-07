@@ -27,12 +27,12 @@ export const MobileMenu = ({ open, setOpen }: MobileMenuProps) => (
       <div className="mt-6 flow-root">
         <div className="-my-6 divide-y divide-gray-500/10">
           <div className="space-y-2 py-6 flex flex-col gap-4">
-            <NavLinks>Features</NavLinks>
-            <NavLinks>Markplace</NavLinks>
-            <NavLinks>Company</NavLinks>
+            <NavLinks href={""}>Browse</NavLinks>
+            <NavLinks href={"../../create"}>Create</NavLinks>
+            <NavLinks href={""}>Company</NavLinks>
           </div>
           <div className="py-6">
-            <NavLinks>Log in</NavLinks>
+            <NavLinks href={""}>Log in</NavLinks>
           </div>
         </div>
       </div>
