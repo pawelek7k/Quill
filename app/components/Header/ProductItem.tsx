@@ -16,7 +16,10 @@ export const ProductItem = ({ item }: ProductItemProps) => (
       <item.icon aria-hidden="true" className="h-6 w-6 fill-primary " />
     </div>
     <div className="flex-auto">
-      <a href={item.href} className="block font-semibold hover:text-primary ">
+      <a
+        href={item.href}
+        className="block font-semibold ease-in-out duration-300 hover:text-primary "
+      >
         {item.name}
         <span className="absolute inset-0 " />
       </a>
