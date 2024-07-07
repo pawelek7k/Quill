@@ -12,16 +12,6 @@
   --accent: #a2818d;
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    --text: #1a141a;
-    --background: #fbf9fb;
-    --primary: #503d52;
-    --secondary: #bea7b3;
-    --accent: #7e5d69;
-  }
-} */
-
 * {
   margin: 0;
   padding: 0;
