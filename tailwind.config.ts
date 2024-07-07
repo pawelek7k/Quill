@@ -16,6 +16,9 @@ const config: Config = {
       primary: '#c0adc2',
       secondary: '#58414d',
       accent: '#a2818d',
+    },
+    fontFamily: {
+      sans: ['Arsenal SC', 'sans-serif'],
     }
   },
   plugins: [],
