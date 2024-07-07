@@ -27,7 +27,7 @@ export const DesktopMenu = ({ products, callsToAction }: DesktopMenuProps) => (
   <PopoverGroup className="hidden lg:flex lg:gap-x-12">
     <Popover className="relative">
       <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-        <NavLinks href={""}>Explore</NavLinks>
+        Explore
         <ChevronDownIcon
           aria-hidden="true"
           className="h-5 w-5 flex-none text-gray-400"
@@ -45,7 +45,7 @@ export const DesktopMenu = ({ products, callsToAction }: DesktopMenuProps) => (
         <CallsToAction calls={callsToAction} />
       </PopoverPanel>
     </Popover>
-    <NavLinks href={"../../create"}>Create</NavLinks>
-    <NavLinks href={""}>Company</NavLinks>
+    <NavLinks href={"/create"}>Create</NavLinks>
+    <NavLinks href={"/"}>Company</NavLinks>
   </PopoverGroup>
 );

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const NavLinks = ({
   children,
   href,
@@ -5,10 +7,10 @@ export const NavLinks = ({
   children: React.ReactNode;
   href: string;
 }) => (
-  <a
+  <Link
     href={href}
     className="text-xl font-semibold leading-6 text-text lg:text-base "
   >
     {children}
-  </a>
+  </Link>
 );

@@ -80,12 +80,17 @@ export const Header = () => {
         </div>
         <DesktopMenu products={products} callsToAction={callsToAction} />
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NavLinks>
+          <NavLinks href={"#"}>
             Log in <span aria-hidden="true">&rarr;</span>
           </NavLinks>
         </div>
       </nav>
-      <MobileMenu open={mobileMenuOpen} setOpen={setMobileMenuOpen} />
+      <MobileMenu
+        open={mobileMenuOpen}
+        setOpen={setMobileMenuOpen}
+        products={products}
+        callsToAction={callsToAction}
+      />
     </header>
   );
 };
