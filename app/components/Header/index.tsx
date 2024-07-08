@@ -11,11 +11,11 @@ import {
 } from "@heroicons/react/20/solid";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import { Button } from "@nextui-org/button";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Logo } from "../Logo";
 import { DesktopMenu } from "./DesktopMenu";
 import { MobileMenu } from "./MobileMenu";
-import { NavLinks } from "./NavLinks";
 
 const products = [
   {
@@ -56,6 +56,11 @@ const callsToAction = [
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const router = useRouter();
+
+  const handleNavigate = () => {
+    router.push("/login");
+  };
 
   return (
     <header className="z-999 fixed top-0 w-screen">
@@ -80,12 +85,15 @@ export const Header = () => {
           </button>
         </div>
         <DesktopMenu products={products} callsToAction={callsToAction} />
+
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NavLinks href={"/login"}>
-            <Button radius="full" className="bg-secondaryBg text-text">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </Button>
-          </NavLinks>
+          <Button
+            radius="full"
+            className="bg-secondaryBg text-text"
+            onClick={handleNavigate}
+          >
+            Log in <span aria-hidden="true">&rarr;</span>
+          </Button>
         </div>
       </nav>
       <MobileMenu

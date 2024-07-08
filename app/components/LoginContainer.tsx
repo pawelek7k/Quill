@@ -1,3 +1,4 @@
+import { Button } from "@nextui-org/button";
 import { Logo } from "./Logo";
 import { Heading } from "./SecondaryHeading";
 
@@ -5,7 +6,7 @@ export const LoginContainer = () => {
   return (
     <>
       <div className="flex min-h-full flex-col justify-center py-12 lg:px-8 h-screen align-center">
-        <div className="sm:mx-auto sm:w-full flex justify-center text-center align-center">
+        <div className="flex justidy-center items-center">
           <Logo />
           <Heading>Sign in to your account</Heading>
         </div>
@@ -60,23 +61,23 @@ export const LoginContainer = () => {
               </div>
             </div>
 
-            <div>
-              <button
-                type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            <div className="flex justify-center">
+              <Button
+                radius="full"
+                className="bg-myPrimary text-secondaryBg font-semibold"
               >
-                Sign in
-              </button>
+                Log in <span aria-hidden="true">&rarr;</span>
+              </Button>
             </div>
           </form>
 
           <p className="mt-10 text-center text-sm text-gray-500">
-            Not a member?
+            Not accound yet?{" "}
             <a
               href="#"
               className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
             >
-              Start a 14 day free trial
+              Register now!
             </a>
           </p>
         </div>
