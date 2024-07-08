@@ -32,7 +32,7 @@ export const MobileMenu = ({
 }: MobileMenuProps) => (
   <Dialog open={open} onClose={setOpen} className="lg:hidden ">
     <div className="fixed inset-0 z-10" />
-    <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:border-s sm:border-myPrimary bg-secondaryBg backdrop-blur-sm z-999">
+    <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:border-s sm:border-myPrimary bg-secondaryBg backdrop-blur-sm z-999 bg-primary-gradient">
       <div className="flex items-center justify-between">
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only text-text">Writting app</span>
