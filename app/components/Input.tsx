@@ -4,9 +4,15 @@ interface InputProps {
   label: string;
   type: string;
   name: string;
+  autocomplate: string;
 }
 
-export const InputContainer = ({ label, type, name }: InputProps) => {
+export const InputContainer = ({
+  label,
+  type,
+  name,
+  autocomplate,
+}: InputProps) => {
   const nanoId = nanoid();
   return (
     <>
@@ -19,6 +25,7 @@ export const InputContainer = ({ label, type, name }: InputProps) => {
           name={name}
           type={type}
           required
+          autoComplete={autocomplate}
           className="block w-full rounded-md border-0 p-2 font-medium shadow-sm sm:text-sm sm:leading-6 outline-none bg-text text-secondaryBg"
         />
       </div>

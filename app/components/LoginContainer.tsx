@@ -17,7 +17,12 @@ export const LoginContainer = () => {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <Form>
             <div>
-              <InputContainer label={"E-mail"} type={"email"} name={"email"} />
+              <InputContainer
+                label={"E-mail"}
+                type={"email"}
+                name={"email"}
+                autocomplate={"email"}
+              />
             </div>
 
             <div>
@@ -25,6 +30,7 @@ export const LoginContainer = () => {
                 label={"Password"}
                 type={"password"}
                 name={"password"}
+                autocomplate={"current-password"}
               />
             </div>
 

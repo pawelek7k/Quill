@@ -35,7 +35,7 @@ export const Features = () => {
       <div className="p-10 flex flex-col items-center justify-center">
         <Heading>Features</Heading>
 
-        <ul className="p-4 flex items-center justify-center gap-16 flex-col mt-8 md:flex-row flex-wrap">
+        <ul className="pt-10 flex items-center justify-center gap-16 flex-col mt-8 md:flex-row flex-wrap">
           {features.map((item) => (
             <CardContainer key={item.id} item={item} />
           ))}
