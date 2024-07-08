@@ -26,8 +26,9 @@ const config: Config = {
       '999': '999',
     },
     backgroundImage: {
-      'hero-bg': "url('/heroBg.jpg')"
+      'hero-bg': "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.3)), url('/heroBg.jpg')",
     }
+
   },
   plugins: [nextui()],
 };

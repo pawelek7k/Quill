@@ -81,7 +81,7 @@ export const Header = () => {
         </div>
         <DesktopMenu products={products} callsToAction={callsToAction} />
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NavLinks href={"#"}>
+          <NavLinks href={"/login"}>
             <Button radius="full" className="bg-secondaryBg text-text">
               Log in <span aria-hidden="true">&rarr;</span>
             </Button>

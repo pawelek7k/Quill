@@ -75,7 +75,7 @@ export const MobileMenu = ({
             <NavLinks href={"/create"}>Company</NavLinks>
           </div>
           <div className="py-6">
-            <NavLinks href={"/create"}>Log in</NavLinks>
+            <NavLinks href={"/login"}>Log in</NavLinks>
           </div>
         </div>
       </div>
