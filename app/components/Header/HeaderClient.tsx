@@ -1,8 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import { Button } from "@nextui-org/button";
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -13,36 +10,39 @@ import {
   PlayCircleIcon,
   SquaresPlusIcon,
 } from "@heroicons/react/24/outline";
-import { MobileMenu } from "./MobileMenu";
+import { Button } from "@nextui-org/button";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { DesktopMenu } from "./DesktopMenu";
+import { MobileMenu } from "./MobileMenu";
 
 const products = [
   {
-    name: "Analytics",
+    name: "Features",
     description: "Get a better understanding of your traffic",
     href: "#",
     icon: ChartPieIcon,
   },
   {
-    name: "Engagement",
+    name: "About us",
     description: "Speak directly to your customers",
     href: "#",
     icon: CursorArrowRaysIcon,
   },
   {
-    name: "Security",
+    name: "How we work",
     description: "Your customers’ data will be safe and secure",
     href: "#",
     icon: FingerPrintIcon,
   },
   {
-    name: "Integrations",
+    name: "Create book with us",
     description: "Connect with third-party tools",
     href: "#",
     icon: SquaresPlusIcon,
   },
   {
-    name: "Automations",
+    name: "Contact us",
     description: "Build strategic funnels that will convert",
     href: "#",
     icon: ArrowPathIcon,
