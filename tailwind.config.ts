@@ -13,7 +13,7 @@ const config: Config = {
     colors: {
       transparent: 'transparent',
       text: '#ebe5eb',
-      background: '#060406',
+      firstBg: '#060406',
       secondaryBg: '#060406c8',
       myPrimary: '#c0adc2',
       secondary: '#58414d',
@@ -23,6 +23,7 @@ const config: Config = {
       sans: ['Arsenal SC', 'sans-serif'],
     },
     zIndex: {
+      '998': '998',
       '999': '999',
     },
     backgroundImage: {

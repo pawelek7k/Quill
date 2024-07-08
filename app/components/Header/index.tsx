@@ -63,7 +63,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="z-999 fixed top-0 w-screen">
+    <header className="z-998 fixed top-0 w-screen">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-evenly p-6 lg:px-8"
