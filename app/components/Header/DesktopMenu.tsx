@@ -26,7 +26,7 @@ interface DesktopMenuProps {
 export const DesktopMenu = ({ products, callsToAction }: DesktopMenuProps) => (
   <PopoverGroup className="hidden lg:flex lg:gap-x-12">
     <Popover className="relative">
-      <PopoverButton className="flex items-center gap-x-1 text-gray-900 text-xl font-semibold leading-6 text-text lg:text-base">
+      <PopoverButton className="flex items-center gap-x-1 text-gray-900 text-xl font-semibold leading-6 text-text lg:text-base outline-none">
         Explore
         <ChevronDownIcon
           aria-hidden="true"
