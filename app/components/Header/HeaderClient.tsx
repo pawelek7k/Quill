@@ -24,13 +24,7 @@ const products = [
     icon: ChartPieIcon,
   },
   {
-    name: "About us",
-    description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
-  },
-  {
-    name: "How we work",
+    name: "How Quill works",
     description: "Your customers’ data will be safe and secure",
     href: "#",
     icon: FingerPrintIcon,
@@ -40,6 +34,12 @@ const products = [
     description: "Connect with third-party tools",
     href: "#",
     icon: SquaresPlusIcon,
+  },
+  {
+    name: "About us",
+    description: "Speak directly to your customers",
+    href: "#",
+    icon: CursorArrowRaysIcon,
   },
   {
     name: "Contact us",
