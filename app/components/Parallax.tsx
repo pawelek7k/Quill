@@ -1,6 +1,7 @@
 import { Button } from "@nextui-org/button";
 import { Heading } from "./Heading";
 import { NavBtn } from "./NavBtn";
+import { Paragraph } from "./Paragraph";
 
 export const Parallax = () => (
   <div className=" bg-hero-bg bg-fixed bg-center bg-no-repeat bg-cover h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
@@ -15,12 +16,8 @@ export const Parallax = () => (
           </div>
         </div>
         <div className="text-center">
-          <Heading>Data to enrich your online business</Heading>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
-          </p>
+          <Heading>Your Words, Your Rules</Heading>
+          <Paragraph>Craft Stories Your Way</Paragraph>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <NavBtn>Get started</NavBtn>
             <Button className="bg-accent text-text" radius="full">
