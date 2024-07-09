@@ -9,7 +9,7 @@ export const Parallax = () => (
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600  hover:ring-gray-900/20 bg-secondaryBg backdrop-blur-sm border border-myPrimary">
-            Announcing our next round of funding.{" "}
+            Support us.{" "}
             <a href="#" className="font-semibold text-indigo-600 ">
               Read more <span aria-hidden="true">&rarr;</span>
             </a>

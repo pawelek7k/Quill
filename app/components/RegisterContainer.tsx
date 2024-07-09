@@ -5,17 +5,25 @@ import { LoginLinks } from "./LoginLinks";
 import { Logo } from "./Logo";
 import { Heading } from "./SecondaryHeading";
 
-export const LoginContainer = () => {
+export const RegisterContainer = () => {
   return (
     <>
       <div className="flex min-h-full flex-col justify-center py-12 lg:px-8 h-screen align-center">
         <div className="flex justidy-center items-center flex-col gap-6">
           <Logo />
-          <Heading>Log in</Heading>
+          <Heading>Join us</Heading>
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <Form>
+            <div>
+              <InputContainer
+                label={"Username"}
+                type={"name"}
+                name={"name"}
+                autocomplate={"name"}
+              />
+            </div>
             <div>
               <InputContainer
                 label={"E-mail"}
@@ -39,20 +47,15 @@ export const LoginContainer = () => {
                 radius="full"
                 className="bg-myPrimary text-secondaryBg font-semibold"
               >
-                Log in <span aria-hidden="true">&rarr;</span>
+                Register <span aria-hidden="true">&rarr;</span>
               </Button>
             </div>
           </Form>
           <div className="mt-10">
             <LoginLinks
-              firstP={"Not account yet?"}
-              firstText={"Register now!"}
-              firstLink={"/register"}
-            />
-            <LoginLinks
-              firstP={"Forgot password?"}
-              firstText={"Click here!"}
-              firstLink={"#"}
+              firstP={"You already have an account?"}
+              firstText={"Log in!"}
+              firstLink={"/login"}
             />
           </div>
         </div>
