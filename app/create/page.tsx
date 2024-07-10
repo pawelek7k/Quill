@@ -13,7 +13,7 @@ export default function CreatePage() {
       <Section>
         <BreadcrumbContainer />
         <div className="mt-10 text-center flex items-center justify-center flex-col">
-          <Heading>Create your first book with us!</Heading>
+          <Heading>Create your book with us!</Heading>
           <p className="h-screen">
             <Link href={`/create/${nanoId}`}>Book 1</Link>
           </p>
