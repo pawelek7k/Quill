@@ -12,9 +12,9 @@ export default function CreatePage() {
       <Header />
       <Section>
         <BreadcrumbContainer />
-        <div className="h-screen text-center flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex-col">
+        <div className="mt-10 text-center flex items-center justify-center flex-col">
           <Heading>Create your first book with us!</Heading>
-          <p>
+          <p className="h-screen">
             <Link href={`/create/${nanoId}`}>Book 1</Link>
           </p>
         </div>

@@ -8,6 +8,7 @@ export const BreadcrumbContainer = () => {
 
   return (
     <Breadcrumbs
+      className="mt-10"
       underline="active"
       onAction={(key) => setCurrentPage(key)}
       itemClasses={{
@@ -15,11 +16,15 @@ export const BreadcrumbContainer = () => {
         separator: "text-white/40",
       }}
     >
-      <BreadcrumbItem key="home" isCurrent={currentPage === "home"}>
+      <BreadcrumbItem key="home" isCurrent={currentPage === "/"} href="/">
         Home
       </BreadcrumbItem>
-      <BreadcrumbItem key="music" isCurrent={currentPage === "music"}>
-        Music
+      <BreadcrumbItem
+        key="create"
+        isCurrent={currentPage === "/create"}
+        href="/create"
+      >
+        Create
       </BreadcrumbItem>
       <BreadcrumbItem key="artist" isCurrent={currentPage === "artist"}>
         Artist
