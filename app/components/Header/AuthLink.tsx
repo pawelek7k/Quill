@@ -8,7 +8,7 @@ export const AuthLink = ({
   children: React.ReactNode;
   href: string;
 }) => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   const toggleVisibility = () => {
     setIsVisible(!isVisible);
