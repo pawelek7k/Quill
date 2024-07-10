@@ -6,6 +6,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { ChevronDownIcon, XMarkIcon } from "@heroicons/react/16/solid";
+import { AuthLink } from "./AuthLink";
 import { NavLinks } from "./NavLinks";
 
 interface MobileMenuProps {
@@ -71,7 +72,7 @@ export const MobileMenu = ({
               </DisclosurePanel>
             </Disclosure>
             <NavLinks href={"#"}>Explore</NavLinks>
-            <NavLinks href={"/create"}>Create</NavLinks>
+            <AuthLink href={"/create"}>Create</AuthLink>
             <NavLinks href={"/create"}>Company</NavLinks>
           </div>
           <div className="py-6">

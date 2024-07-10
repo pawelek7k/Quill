@@ -5,6 +5,7 @@ import {
   PopoverPanel,
 } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
+import { AuthLink } from "./AuthLink";
 import CallsToAction from "./CallsToAction";
 import { NavLinks } from "./NavLinks";
 import { ProductItem } from "./ProductItem";
@@ -45,7 +46,7 @@ export const DesktopMenu = ({ products, callsToAction }: DesktopMenuProps) => (
         <CallsToAction calls={callsToAction} />
       </PopoverPanel>
     </Popover>
-    <NavLinks href={"/create"}>Create</NavLinks>
+    <AuthLink href={"/create"}>Create</AuthLink>
     <NavLinks href={"/"}>Company</NavLinks>
   </PopoverGroup>
 );
