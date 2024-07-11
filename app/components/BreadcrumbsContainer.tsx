@@ -26,7 +26,7 @@ export const BreadcrumbContainer = () => {
       >
         Create
       </BreadcrumbItem>
-      <BreadcrumbItem key="artist" isCurrent={currentPage === "artist"}>
+      {/* <BreadcrumbItem key="artist" isCurrent={currentPage === "artist"}>
         Artist
       </BreadcrumbItem>
       <BreadcrumbItem key="album" isCurrent={currentPage === "album"}>
@@ -34,7 +34,7 @@ export const BreadcrumbContainer = () => {
       </BreadcrumbItem>
       <BreadcrumbItem key="song" isCurrent={currentPage === "song"}>
         Song
-      </BreadcrumbItem>
+      </BreadcrumbItem> */}
     </Breadcrumbs>
   );
 };
