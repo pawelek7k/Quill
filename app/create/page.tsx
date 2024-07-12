@@ -1,6 +1,5 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/react";
 import { nanoid } from "nanoid";
-import Link from "next/link";
 import { BreadcrumbContainer } from "../components/BreadcrumbsContainer";
 import { Heading } from "../components/Heading";
 import { NavCard } from "../components/NavCard";
@@ -15,11 +14,8 @@ export default function CreatePage() {
         <BreadcrumbContainer />
         <div className="mt-10 text-center flex items-center justify-center flex-col">
           <Heading>Create your book with us!</Heading>
-          <p>
-            <Link href={`/create/${nanoId}`}>Book 1</Link>
-          </p>
         </div>
-        <ul className="flex items-center justify-center gap-16 mt-8">
+        <ul className="flex items-center justify-center gap-16 mt-10">
           <li>
             <Card className="py-4 bg-text text-secondaryBg">
               <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
