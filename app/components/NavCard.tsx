@@ -17,7 +17,7 @@ export const NavCard = ({
 
   return (
     <div
-      className="bg-secondaryBg text-text w-60 h-32"
+      className="bg-secondaryBg text-text w-60 h-32 flex items-center justify-center border-r-2"
       onClick={handleNavigate}
     >
       {children}

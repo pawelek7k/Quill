@@ -35,8 +35,8 @@ export default function CreatePage() {
             </Card>
           </li>
           <li>
-            <Card className="py-6 bg-text text-secondaryBg">
-              <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+            <Card className="py-6 bg-text text-secondaryBg rounded-lg">
+              <CardHeader className="pb-0 pt-2 px-4 flex-col items-start rounded-lg">
                 <p className="text-tiny uppercase font-bold">Username</p>
                 <ThirdHeading>Create new</ThirdHeading>
               </CardHeader>
