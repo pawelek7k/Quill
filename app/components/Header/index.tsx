@@ -11,7 +11,7 @@ export const Header = () => {
         <Logo />
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">Quill</span>
           </a>
         </div>
         <HeaderClient />

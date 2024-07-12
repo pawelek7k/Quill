@@ -10,10 +10,10 @@ import {
   PlayCircleIcon,
   SquaresPlusIcon,
 } from "@heroicons/react/24/outline";
-import { Button } from "@nextui-org/button";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { DesktopMenu } from "./DesktopMenu";
+import { DropdownContainer } from "./Dropdown";
 import { MobileMenu } from "./MobileMenu";
 
 const products = [
@@ -55,11 +55,6 @@ const callsToAction = [
 
 const HeaderClient = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const router = useRouter();
-
-  const handleNavigate = () => {
-    router.push("/login");
-  };
 
   return (
     <>
@@ -75,13 +70,7 @@ const HeaderClient = () => {
       </div>
       <DesktopMenu products={products} callsToAction={callsToAction} />
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <Button
-          radius="full"
-          className="bg-secondaryBg text-text"
-          onClick={handleNavigate}
-        >
-          Log in <span aria-hidden="true">&rarr;</span>
-        </Button>
+        <DropdownContainer />
       </div>
       <MobileMenu
         open={mobileMenuOpen}
