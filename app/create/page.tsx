@@ -17,7 +17,7 @@ export default function CreatePage() {
         </div>
         <ul className="flex items-center justify-center gap-16 mt-10">
           <li>
-            <Card className="py-4 bg-text text-secondaryBg">
+            <Card className="py-4 bg-text text-secondaryBg rounded-lg">
               <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                 <p className="text-tiny uppercase font-bold">Username</p>
                 <small className="text-default-500">
@@ -32,7 +32,7 @@ export default function CreatePage() {
           </li>
           <li>
             <Card className="py-6 bg-text text-secondaryBg rounded-lg">
-              <CardHeader className="pb-0 pt-2 px-4 flex-col items-start rounded-lg">
+              <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                 <p className="text-tiny uppercase font-bold">Username</p>
                 <ThirdHeading>Create new</ThirdHeading>
               </CardHeader>
