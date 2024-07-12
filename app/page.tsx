@@ -6,7 +6,6 @@ import { Introduction } from "./components/Introduction";
 export default function Home() {
   return (
     <>
-      <Header />
       <Hero />
       <Features />
       <Introduction />

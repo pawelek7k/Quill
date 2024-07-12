@@ -36,6 +36,7 @@ export const LoginContainer = () => {
 
             <div className="flex justify-center">
               <Button
+                type="submit"
                 radius="full"
                 className="bg-myPrimary text-secondaryBg font-semibold"
               >
