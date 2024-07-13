@@ -2,7 +2,7 @@ import { BreadcrumbContainer } from "../components/BreadcrumbsContainer";
 import { Heading } from "../components/Heading";
 import Section from "../components/Section";
 
-export default function CreatePage() {
+export default function LibraryPage() {
   return (
     <main className="h-screen">
       <Section>

@@ -1,5 +1,4 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/react";
-import { nanoid } from "nanoid";
 import { BreadcrumbContainer } from "../components/BreadcrumbsContainer";
 import { Heading } from "../components/Heading";
 import { NavCard } from "../components/NavCard";
@@ -7,7 +6,6 @@ import Section from "../components/Section";
 import { ThirdHeading } from "../components/ThirdHeading";
 
 export default function CreatePage() {
-  const nanoId = nanoid();
   return (
     <main className="h-screen">
       <Section>
@@ -37,7 +35,7 @@ export default function CreatePage() {
                 <ThirdHeading>Create new</ThirdHeading>
               </CardHeader>
               <CardBody className="overflow-visible py-2">
-                <NavCard page={`/create/${nanoId}`}>Create</NavCard>
+                <NavCard page={`/create/new`}>Create</NavCard>
               </CardBody>
             </Card>
           </li>
