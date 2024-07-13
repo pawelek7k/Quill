@@ -1,5 +1,6 @@
 import { BreadcrumbContainer } from "@/app/components/BreadcrumbsContainer";
 import { Heading } from "@/app/components/Heading";
+import { ImagePicker } from "@/app/components/ImagePicker";
 import Section from "@/app/components/Section";
 
 export default function NewPage() {
@@ -8,7 +9,8 @@ export default function NewPage() {
       <Section>
         <BreadcrumbContainer />
         <div className="mt-10 flex flex-col gap-8">
-          <Heading>Create your book!</Heading>
+          <Heading>Book Details</Heading>
+          <ImagePicker label={"ok"} name={"ok"} />
         </div>
       </Section>
     </main>
