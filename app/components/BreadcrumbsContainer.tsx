@@ -8,6 +8,9 @@ export const BreadcrumbContainer = () => {
   const pathname = usePathname();
   const segments = pathname.split("/").filter((item) => item !== "");
 
+  const capitalize = (str: string) =>
+    str.charAt(0).toUpperCase() + str.slice(1);
+
   return (
     <Breadcrumbs
       itemClasses={{
@@ -21,10 +24,10 @@ export const BreadcrumbContainer = () => {
       {segments.map((item, index) => (
         <BreadcrumbItem key={item}>
           {index === segments.length - 1 ? (
-            <span>{item.charAt(0).toUpperCase() + item.slice(1)}</span>
+            <span>{capitalize(item)}</span>
           ) : (
             <Link href={`/${segments.slice(0, index + 1).join("/")}`}>
-              {item}
+              {capitalize(item)}
             </Link>
           )}
         </BreadcrumbItem>
