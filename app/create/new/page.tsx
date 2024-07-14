@@ -10,7 +10,7 @@ export default function NewPage() {
         <BreadcrumbContainer />
         <div className="mt-10 flex flex-col gap-8">
           <Heading>Book Details</Heading>
-          <ImagePicker label={"ok"} name={"ok"} />
+          <ImagePicker label={""} name={"SelectedImage"} />
         </div>
       </Section>
     </main>

@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@nextui-org/button";
 import Image from "next/image";
 import { ChangeEvent, useRef, useState } from "react";
 
@@ -34,15 +35,15 @@ export const ImagePicker = ({ label, name }: ImagePickerProps) => {
   return (
     <div>
       <label htmlFor={name}>{label}</label>
-      <div>
-        <div className="w-[240px] h-[350px] relative">
+      <div className="flex flex-col gap-4 w-[240px]">
+        <div className="w-[240px] h-[350px] relative border border-myPrimary">
           {!pickedImage && <p>No image picked yet.</p>}
           {pickedImage && (
             <Image
               src={pickedImage}
               alt="The image selected by the user"
               layout="fill"
-              objectFit="contain"
+              objectFit="cover"
             />
           )}
         </div>
@@ -56,9 +57,9 @@ export const ImagePicker = ({ label, name }: ImagePickerProps) => {
           onChange={handleImageChange}
           required
         />
-        <button type="button" onClick={handlePickClick}>
+        <Button type="button" onClick={handlePickClick} radius="full">
           Pick an Image
-        </button>
+        </Button>
       </div>
     </div>
   );
