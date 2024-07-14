@@ -19,7 +19,8 @@ export const Textarea = ({ label, name, id }: TextareaProps) => {
           name={name}
           required
           autoComplete="off"
-          className="block w-full rounded-md border-0 p-2 font-medium shadow-sm sm:text-sm sm:leading-6 outline-none bg-text text-secondaryBg"
+          style={{ resize: "none" }}
+          className="block w-full rounded-md border-0 p-2 font-medium shadow-sm sm:text-sm sm:leading-6 outline-none bg-text text-secondaryBg h-[20rem]"
         />
       </div>
     </>

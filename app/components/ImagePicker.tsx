@@ -35,8 +35,8 @@ export const ImagePicker = ({ label, name }: ImagePickerProps) => {
   return (
     <div>
       <label htmlFor={name}>{label}</label>
-      <div className="flex flex-col gap-4 w-[240px]">
-        <div className="w-[240px] h-[350px] relative border border-myPrimary flex items-center justify-center font-sans">
+      <div className="flex flex-col gap-4 w-[15rem]">
+        <div className="w-[15rem] h-[23rem] relative border border-myPrimary flex items-center justify-center font-sans">
           {!pickedImage && <p>No image picked yet.</p>}
           {pickedImage && (
             <Image
