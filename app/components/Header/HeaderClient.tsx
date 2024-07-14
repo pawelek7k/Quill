@@ -10,7 +10,6 @@ import {
   PlayCircleIcon,
   SquaresPlusIcon,
 } from "@heroicons/react/24/outline";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { DesktopMenu } from "./DesktopMenu";
 import { DropdownContainer } from "./Dropdown";

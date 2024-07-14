@@ -36,7 +36,7 @@ export const ImagePicker = ({ label, name }: ImagePickerProps) => {
     <div>
       <label htmlFor={name}>{label}</label>
       <div className="flex flex-col gap-4 w-[240px]">
-        <div className="w-[240px] h-[350px] relative border border-myPrimary">
+        <div className="w-[240px] h-[350px] relative border border-myPrimary flex items-center justify-center font-sans">
           {!pickedImage && <p>No image picked yet.</p>}
           {pickedImage && (
             <Image
@@ -58,7 +58,7 @@ export const ImagePicker = ({ label, name }: ImagePickerProps) => {
           required
         />
         <Button type="button" onClick={handlePickClick} radius="full">
-          Pick an Image
+          Choose a cover.
         </Button>
       </div>
     </div>

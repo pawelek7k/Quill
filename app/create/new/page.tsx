@@ -8,9 +8,12 @@ export default function NewPage() {
     <main className="h-screen">
       <Section>
         <BreadcrumbContainer />
-        <div className="mt-10 flex flex-col gap-8">
-          <Heading>Book Details</Heading>
-          <ImagePicker label={""} name={"SelectedImage"} />
+        <div className="flex">
+          <div className="mt-10 flex flex-col gap-8">
+            <Heading>Book Details</Heading>
+            <ImagePicker label={""} name={"SelectedImage"} />
+          </div>
+          <div>ok</div>
         </div>
       </Section>
     </main>
