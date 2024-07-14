@@ -1,9 +1,10 @@
 import { InputContainer } from "./Input";
+import { SelectData } from "./Select";
 import { Textarea } from "./Textarea";
 
 export const BookForm = () => {
   return (
-    <form action="" className="w-[25rem] flex flex-col gap-4">
+    <form action="" className="w-[25rem] flex flex-col">
       <InputContainer
         label={"Title"}
         type={"text"}
@@ -11,6 +12,7 @@ export const BookForm = () => {
         autocomplate={"off"}
       />
       <Textarea label={"Description"} name={""} />
+      <SelectData />
     </form>
   );
 };
