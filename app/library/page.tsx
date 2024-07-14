@@ -4,7 +4,7 @@ import Section from "../components/Section";
 
 export default function LibraryPage() {
   return (
-    <main className="h-screen">
+    <main className="min-h-screen">
       <Section>
         <BreadcrumbContainer />
         <div className="mt-10 flex flex-col gap-8">
