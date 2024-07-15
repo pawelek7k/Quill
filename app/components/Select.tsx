@@ -23,7 +23,15 @@ const genres = [
 export const SelectData = () => {
   return (
     <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
-      <Select label="Select a genre" className="max-w-xs">
+      <Select
+        label="Select a genre"
+        className="max-w-xs bg-secondaryBg"
+        classNames={{
+          base: ["max-w-xs", "bg-default-50"],
+          trigger: "h-12",
+          label: "group-data-[filled=true]:-translate-y-5",
+        }}
+      >
         {genres.map((genre) => (
           <SelectItem key={genre.key}>{genre.label}</SelectItem>
         ))}
