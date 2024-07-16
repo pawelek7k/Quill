@@ -12,7 +12,9 @@ export const BookForm = () => {
         autocomplate={"off"}
       />
       <Textarea label={"Description"} name={""} />
-      <SelectData />
+      <div className="mt-6">
+        <SelectData />
+      </div>
     </form>
   );
 };
