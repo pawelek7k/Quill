@@ -4,7 +4,7 @@ import { NavBtn } from "./NavBtn";
 import { ThirdHeading } from "./ThirdHeading";
 
 export const Parallax = () => (
-  <div className=" bg-hero-bg bg-fixed bg-center bg-no-repeat bg-cover h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
+  <div className=" bg-hero-bg bg-fixed bg-center bg-no-repeat bg-cover h-screen">
     <div className="relative isolate px-6 pt-14 lg:px-8">
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
