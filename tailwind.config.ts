@@ -7,7 +7,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/(breadcrumbs|button|card|dropdown|select|ripple|spinner|menu|divider|popover|listbox|scroll-shadow).js"
+    "./node_modules/@nextui-org/theme/dist/components/(breadcrumbs|button|card|checkbox|dropdown|select|toggle|ripple|spinner|menu|divider|popover|listbox|scroll-shadow).js"
   ],
   theme: {
     colors: {

@@ -1,3 +1,4 @@
+import { ChexboxContainer } from "./Chexbox";
 import { InputContainer } from "./Input";
 import { SelectData } from "./Select";
 import { Textarea } from "./Textarea";
@@ -12,8 +13,9 @@ export const BookForm = () => {
         autocomplate={"off"}
       />
       <Textarea label={"Description"} name={""} />
-      <div className="mt-6">
+      <div className="mt-6 flex gap-6 items-center">
         <SelectData />
+        <ChexboxContainer />
       </div>
     </form>
   );

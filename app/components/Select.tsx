@@ -23,11 +23,7 @@ const genres = [
 export const SelectData = () => {
   return (
     <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
-      <Select
-        label="Select a genre"
-        className="max-w-xs bg-secondaryBg"
-        color={"primary"}
-      >
+      <Select label="Select a genre" className="max-w-xs bg-transparent">
         {genres.map((genre) => (
           <SelectItem key={genre.key}>{genre.label}</SelectItem>
         ))}

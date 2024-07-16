@@ -57,7 +57,12 @@ export const ImagePicker = ({ label, name }: ImagePickerProps) => {
           onChange={handleImageChange}
           required
         />
-        <Button type="button" onClick={handlePickClick} radius="full">
+        <Button
+          type="button"
+          className="bg-accent text-text"
+          onClick={handlePickClick}
+          radius="full"
+        >
           Choose a cover.
         </Button>
       </div>
