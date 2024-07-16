@@ -29,7 +29,7 @@ const config: Config = {
     backgroundImage: {
       'hero-bg': "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.3)), url('/heroBg.jpg')",
       'primary-gradient': "linear-gradient(to bottom, rgba(0, 0, 0, 1),  rgba(255, 255, 255, 0.3))",
-      'bookdetails-bg': "linear-gradient(90deg, rgba(6,4,6,1) 0%, rgba(6,4,6,0.3981967787114846) 51%, rgba(6,4,6,1) 100%), url('/details-book.jpg')",
+      'bookdetails-bg': "linear-gradient(90deg, rgba(6,4,6,1) 0%, rgba(6,4,6,0.4) 59%, rgba(6,4,6,1) 100%), url('/details-book.jpg')",
     }
 
   },

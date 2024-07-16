@@ -5,6 +5,8 @@ interface InputProps {
   type: string;
   name: string;
   autocomplate: string;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const InputContainer = ({
@@ -12,6 +14,8 @@ export const InputContainer = ({
   type,
   name,
   autocomplate,
+  value,
+  onChange,
 }: InputProps) => {
   const nanoId = nanoid();
   return (
@@ -23,6 +27,8 @@ export const InputContainer = ({
         <input
           id={nanoId}
           name={name}
+          onChange={onChange}
+          value={value}
           type={type}
           required
           autoComplete={autocomplate}

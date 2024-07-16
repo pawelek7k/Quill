@@ -1,6 +1,7 @@
 import { ChexboxContainer } from "./Chexbox";
 import { InputContainer } from "./Input";
 import { SelectData } from "./Select";
+import { Tags } from "./Tags";
 import { Textarea } from "./Textarea";
 
 export const BookForm = () => {
@@ -17,6 +18,7 @@ export const BookForm = () => {
         <SelectData />
         <ChexboxContainer />
       </div>
+      <Tags />
     </form>
   );
 };
