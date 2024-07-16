@@ -63,7 +63,7 @@ export const ImagePicker = ({ label, name }: ImagePickerProps) => {
           onClick={handlePickClick}
           radius="full"
         >
-          Choose a cover.
+          Choose a cover
         </Button>
       </div>
     </div>
