@@ -27,9 +27,11 @@ export const Tags = () => {
         label={"Tags"}
         autocomplate={"off"}
       />
-      <div className="bg-myPrimary">
+      <div className="flex gap-2 ">
         {words.map((word, index) => (
-          <div key={index}>{word}</div>
+          <div className="bg-myPrimary rounded-full p-1 " key={index}>
+            {word}
+          </div>
         ))}
       </div>
     </>
