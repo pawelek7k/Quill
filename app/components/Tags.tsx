@@ -29,7 +29,10 @@ export const Tags = () => {
       />
       <div className="flex gap-2 ">
         {words.map((word, index) => (
-          <div className="bg-myPrimary rounded-full p-1 " key={index}>
+          <div
+            className="bg-myPrimary rounded-full p-1 min-w-12 text-center"
+            key={index}
+          >
             {word}
           </div>
         ))}
