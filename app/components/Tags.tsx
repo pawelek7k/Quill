@@ -27,7 +27,7 @@ export const Tags = () => {
         label={"Tags"}
         autocomplate={"off"}
       />
-      <div>
+      <div className="bg-myPrimary">
         {words.map((word, index) => (
           <div key={index}>{word}</div>
         ))}
