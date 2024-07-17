@@ -19,7 +19,7 @@ export const InputContainer = ({
 }: InputProps) => {
   const nanoId = nanoid();
   return (
-    <>
+    <div>
       <label htmlFor={nanoId} className="block text-sm font-medium leading-6">
         {label}
       </label>
@@ -35,6 +35,6 @@ export const InputContainer = ({
           className="block w-full rounded-md border-0 p-2 font-medium shadow-sm sm:text-sm sm:leading-6 outline-none bg-text text-secondaryBg"
         />
       </div>
-    </>
+    </div>
   );
 };

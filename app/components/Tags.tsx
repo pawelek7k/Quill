@@ -18,7 +18,7 @@ export const Tags = () => {
   };
 
   return (
-    <>
+    <div className="flex flex-col gap-4">
       <InputContainer
         type={"text"}
         name={""}
@@ -37,6 +37,6 @@ export const Tags = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
