@@ -22,8 +22,14 @@ const genres = [
 
 export const SelectData = () => {
   return (
-    <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
-      <Select label="Select a genre" className="max-w-xs bg-transparent">
+    <div className="flex w-full flex-wrap md:flex-nowrap gap-4 ">
+      <Select
+        label="Genre"
+        placeholder="Select a genre"
+        labelPlacement="outside"
+        color={"warning"}
+        className="max-w-xs bg-transparent text-myPrimary"
+      >
         {genres.map((genre) => (
           <SelectItem key={genre.key}>{genre.label}</SelectItem>
         ))}
