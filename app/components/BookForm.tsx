@@ -8,8 +8,10 @@ export const BookForm = () => {
   const shareBook = async (formData) => {
     "use server";
 
-    const meal = {
+    const book = {
       title: formData.get("title"),
+      description: formData.get("description"),
+      genre: formData.get("genre"),
     };
   };
   return (
@@ -17,10 +19,10 @@ export const BookForm = () => {
       <InputContainer
         label={"Title"}
         type={"text"}
-        name={""}
+        name={"title"}
         autocomplate={"off"}
       />
-      <Textarea label={"Description"} name={""} />
+      <Textarea label={"Description"} name={"description"} />
       <div className="mt-6 flex gap-6 items-center">
         <SelectData />
         <ChexboxContainer />
