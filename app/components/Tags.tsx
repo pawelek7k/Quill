@@ -48,7 +48,7 @@ export const Tags = () => {
         label={"Tags"}
         autocomplate={"off"}
       />
-      <div className="flex gap-2 ">
+      <div className="flex gap-2 flex-wrap">
         {words.map((word, index) => (
           <div
             className="bg-myPrimary rounded-full py-1 min-w-12 text-center flex flex-nowrap items-center gap-1 px-2"
