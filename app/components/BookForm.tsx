@@ -5,8 +5,15 @@ import { Tags } from "./Tags";
 import { Textarea } from "./Textarea";
 
 export const BookForm = () => {
+  const shareBook = async (formData) => {
+    "use server";
+
+    const meal = {
+      title: formData.get("title"),
+    };
+  };
   return (
-    <form action="" className="w-[25rem] flex flex-col">
+    <form action={shareBook} className="w-[25rem] flex flex-col">
       <InputContainer
         label={"Title"}
         type={"text"}

@@ -15,7 +15,7 @@ export default function NewPage() {
         </div>
 
         <Button type="button" className="bg-accent text-text" radius="full">
-          Skip
+          Next
         </Button>
       </div>
       <Section>

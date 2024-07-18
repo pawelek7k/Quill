@@ -10,7 +10,7 @@ export default function CreatePage() {
     <main className="min-h-screen">
       <Section>
         <BreadcrumbContainer />
-        <div className="mt-10 text-center flex items-center justify-center flex-col">
+        <div className="mt-20 text-center flex items-center justify-center flex-col">
           <Heading>Create your book with us!</Heading>
 
           <ul className="flex items-center justify-center gap-16 mt-10 flex-col sm:flex-row">
