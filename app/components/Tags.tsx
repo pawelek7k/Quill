@@ -1,6 +1,7 @@
 "use client";
 
-import { ChangeEvent, useState } from "react";
+import Notiflix from "notiflix";
+import { ChangeEvent, KeyboardEvent, useState } from "react";
 import { InputContainer } from "./Input";
 
 export const Tags = () => {
@@ -9,11 +10,18 @@ export const Tags = () => {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    if (value.endsWith(" ")) {
-      setWords((prevWords) => [...prevWords, value.trim()]);
-      setInputValue("");
-    } else {
-      setInputValue(value);
+    setInputValue(value);
+  };
+
+  const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === " ") {
+      const trimmedValue = inputValue.trim();
+      if (trimmedValue.length > 2) {
+        setWords((prevWords) => [...prevWords, trimmedValue]);
+        setInputValue("");
+      } else {
+        Notiflix.Notify.warning("Memento te hominem esse");
+      }
     }
   };
 
@@ -24,6 +32,7 @@ export const Tags = () => {
         name={""}
         value={inputValue}
         onChange={handleChange}
+        onKeyDown={handleKeyDown}
         label={"Tags"}
         autocomplate={"off"}
       />

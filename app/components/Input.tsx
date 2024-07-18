@@ -7,6 +7,7 @@ interface InputProps {
   autocomplate: string;
   value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
 }
 
 export const InputContainer = ({
@@ -16,6 +17,7 @@ export const InputContainer = ({
   autocomplate,
   value,
   onChange,
+  onKeyDown,
 }: InputProps) => {
   const nanoId = nanoid();
   return (
@@ -28,6 +30,7 @@ export const InputContainer = ({
           id={nanoId}
           name={name}
           onChange={onChange}
+          onKeyDown={onKeyDown}
           value={value}
           type={type}
           required
