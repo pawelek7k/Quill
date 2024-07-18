@@ -21,6 +21,7 @@ export const Tags = () => {
         setInputValue("");
       } else {
         Notiflix.Notify.warning("Memento te hominem esse");
+        e.preventDefault();
       }
     }
   };
