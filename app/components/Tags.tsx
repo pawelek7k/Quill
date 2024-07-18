@@ -2,6 +2,7 @@
 
 import Notiflix from "notiflix";
 import { ChangeEvent, KeyboardEvent, useState } from "react";
+import { RxCross2 } from "react-icons/rx";
 import { InputContainer } from "./Input";
 
 export const Tags = () => {
@@ -26,6 +27,10 @@ export const Tags = () => {
     }
   };
 
+  const handleDelete = (index: number) => {
+    setWords((prevWords) => prevWords.filter((_, i) => i !== index));
+  };
+
   return (
     <div className="flex flex-col gap-4">
       <InputContainer
@@ -40,10 +45,13 @@ export const Tags = () => {
       <div className="flex gap-2 ">
         {words.map((word, index) => (
           <div
-            className="bg-myPrimary rounded-full p-1 min-w-12 text-center"
+            className="bg-myPrimary rounded-full py-1 min-w-12 text-center flex flex-nowrap items-center gap-1 px-2"
             key={index}
           >
-            {word}
+            <span className="text-nowrap">{word}</span>
+            <div onClick={() => handleDelete(index)} className="cursor-pointer">
+              <RxCross2 />
+            </div>
           </div>
         ))}
       </div>
