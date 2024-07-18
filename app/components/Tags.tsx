@@ -17,13 +17,19 @@ export const Tags = () => {
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key === " ") {
       const trimmedValue = inputValue.trim();
-      if (trimmedValue.length > 2) {
-        setWords((prevWords) => [...prevWords, trimmedValue]);
-        setInputValue("");
-      } else {
-        Notiflix.Notify.warning("Memento te hominem esse");
+      const wordExists = words.includes(trimmedValue);
+      if (trimmedValue.length <= 2 || wordExists) {
+        Notiflix.Notify.warning(
+          wordExists
+            ? "This word is already added."
+            : "Enter a minimum of three characters."
+        );
         e.preventDefault();
+        return;
       }
+
+      setWords((prevWords) => [...prevWords, trimmedValue]);
+      setInputValue("");
     }
   };
 
