@@ -5,7 +5,11 @@ import { ChangeEvent, KeyboardEvent, useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { InputContainer } from "./Input";
 
-export const Tags = () => {
+interface TagsProps {
+  name: string;
+}
+
+export const Tags = ({ name }: TagsProps) => {
   const [inputValue, setInputValue] = useState("");
   const [words, setWords] = useState<string[]>([]);
 
@@ -41,7 +45,7 @@ export const Tags = () => {
     <div className="flex flex-col gap-4">
       <InputContainer
         type={"text"}
-        name={""}
+        name={name}
         value={inputValue}
         onChange={handleChange}
         onKeyDown={handleKeyDown}
