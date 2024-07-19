@@ -45,13 +45,14 @@ export const Tags = ({ name }: TagsProps) => {
     <div className="flex flex-col gap-4">
       <InputContainer
         type={"text"}
-        name={name}
+        name=""
         value={inputValue}
         onChange={handleChange}
         onKeyDown={handleKeyDown}
         label={"Tags"}
         autocomplate={"off"}
       />
+      <input type="hidden" name={name} value={JSON.stringify(words)} />
       <div className="flex gap-2 flex-wrap">
         {words.map((word, index) => (
           <div

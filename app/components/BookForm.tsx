@@ -1,3 +1,4 @@
+import { Button } from "@nextui-org/button";
 import { ChexboxContainer } from "./Chexbox";
 import { ImagePicker } from "./ImagePicker";
 import { InputContainer } from "./Input";
@@ -14,7 +15,10 @@ export const BookForm = () => {
       description: formData.get("description"),
       image: formData.get("selectedImage"),
       genre: formData.get("genre"),
+      tags: JSON.parse(formData.get("tags")),
     };
+
+    console.log(book);
   };
   return (
     <form action={shareBook} className=" flex gap-16">
@@ -35,6 +39,7 @@ export const BookForm = () => {
         </div>
         <Tags name={"tags"} />
       </div>
+      <Button type="submit">Next</Button>
     </form>
   );
 };
