@@ -21,7 +21,7 @@ export const BookForm = () => {
       <div>
         <ImagePicker label={""} name={"selectedImage"} />
       </div>
-      <div>
+      <div className="w-[25rem]">
         <InputContainer
           label={"Title"}
           type={"text"}
