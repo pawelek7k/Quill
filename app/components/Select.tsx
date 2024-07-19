@@ -20,11 +20,16 @@ const genres = [
   { key: "dystopian", label: "Dystopian" },
 ];
 
-export const SelectData = () => {
+interface SelectProps {
+  name: string;
+}
+
+export const SelectData = ({ name }: SelectProps) => {
   return (
     <div className="flex w-full flex-wrap md:flex-nowrap gap-4 ">
       <Select
         label="Genre"
+        name={name}
         placeholder="Select a genre"
         labelPlacement="outside"
         color={"warning"}

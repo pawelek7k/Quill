@@ -15,6 +15,7 @@ export const BookForm = () => {
       description: formData.get("description"),
       image: formData.get("selectedImage"),
       genre: formData.get("genre"),
+      forAdult: formData.get("checkbox"),
       tags: JSON.parse(formData.get("tags")),
     };
 
@@ -34,8 +35,8 @@ export const BookForm = () => {
         />
         <Textarea label={"Description"} name={"description"} />
         <div className="mt-6 flex gap-6 items-center">
-          <SelectData />
-          <ChexboxContainer />
+          <SelectData name={"genre"} />
+          <ChexboxContainer name={"checkbox"} />
         </div>
         <Tags name={"tags"} />
       </div>
