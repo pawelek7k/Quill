@@ -1,9 +1,9 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/react";
-import { BreadcrumbContainer } from "../components/BreadcrumbsContainer";
-import { Heading } from "../components/Heading";
-import { NavCard } from "../components/NavCard";
-import Section from "../components/Section";
-import { ThirdHeading } from "../components/ThirdHeading";
+import { BreadcrumbContainer } from "../../components/BreadcrumbsContainer";
+import { Heading } from "../../components/Heading";
+import { NavCard } from "../../components/NavCard";
+import Section from "../../components/Section";
+import { ThirdHeading } from "../../components/ThirdHeading";
 
 export default function CreatePage() {
   return (

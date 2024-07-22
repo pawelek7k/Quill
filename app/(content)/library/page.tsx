@@ -1,6 +1,6 @@
-import { BreadcrumbContainer } from "../components/BreadcrumbsContainer";
-import { Heading } from "../components/Heading";
-import Section from "../components/Section";
+import { BreadcrumbContainer } from "../../components/BreadcrumbsContainer";
+import { Heading } from "../../components/Heading";
+import Section from "../../components/Section";
 
 export default function LibraryPage() {
   return (
